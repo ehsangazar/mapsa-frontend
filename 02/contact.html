@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>contact us</title>
+</head>
+<body>
+    <h2>
+        Contact us
+    </h2>
+    <a href="/">homepage</a>
+    <a href="/product.html">product</a>
+    <!-- method: GET, POST -->
+    <!-- FETCH, DELETE, PUT, PATCH, POST, GET -->
+    <!-- GET ALL DATA
+        FETCH SINGLE DATA
+        PUT SINGLE DATA UPDATE
+        PATCH SINGLE DATA MODIFIED
+        DELETE SINGLE DATA DELETE 
+        POST CREATE SINGLE DATA
+    -->
+    <form method="GET" action="/request.html" >
+        <label>Name</label>
+        <input name="name" type="text" placeholder="Name" value="Ehsan" />
+        <br />
+        <br />
+        <label>AGE</label>
+        <input name="number" type="number" placeholder="age" required min="1" max="20" />
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <!-- Default VALIDATION -->
+        <input id="email" name="email" type="email" placeholder="Email" required />
+        <br />
+        <br />
+        <!-- multiselector: command + D  -->
+        <!-- Copy: Command + shift + D -->
+        <label>Password</label>
+        <input name="password" type="password" placeholder="Password" />
+        <br />
+        <br />
+        <label>Time</label>
+        <input name="time" type="time" placeholder="Password" />
+        <br />
+        <br />
+        <label>Date</label>
+        <input name="date" type="date" placeholder="Password" />
+        <br />
+        <br />
+        <label>DateTime</label>
+        <input name="datetime-local" type="datetime-local" placeholder="Password" />
+        <br />
+        <br />
+        <label for="checkbox-1234">Checkbox</label>
+        <input id="checkbox-1234" name="checkbox" type="checkbox" placeholder="Password" />
+        <br />
+        <br />
+        <label>Range</label>
+        <input name="range" type="range" placeholder="Range" />
+        <br />
+        <br />
+        <label>Radio1</label>
+        <input name="radio" type="radio" placeholder="radio1" />
+        <label>Radio2</label>
+        <input name="radio" type="radio" placeholder="radio2" />
+        <br />
+        <br />
+        <label>Image</label>
+        <input name="image" type="image"  />
+        <br />
+        <br />
+        <label>file</label>
+        <input name="file" type="file"  />
+        <br />
+        <br />
+        <input name="userId" type="hidden" value="3290932032"   />
+        <br />
+        <br />
+        <label>
+            Content
+        </label>
+        <br />
+        <textarea rows="10">
+            
+        </textarea>
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="submit" />
+    </form>
+
+    <!-- http://127.0.0.1:5500/contact.html?name=&email=&password=&time=&date=&datetime-local=&range=50&image.x=9&image.y=3 -->
+    <!-- http://127.0.0.1:5500/contact.html?name=Ehsan+Gazar&email=&password=&time=&date=&datetime-local=&range=50&file=&userId=3290932032 -->
+</body>
+</html>

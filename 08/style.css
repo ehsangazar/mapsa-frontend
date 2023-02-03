@@ -1,0 +1,13 @@
+ul {
+    display: flex;
+    height: 100vh;
+}
+ul li {
+    width: 100px;
+}
+ul li:nth-child(3) {
+    width: 200px;
+}
+ul li:nth-child(4) {
+    flex-grow: 1;
+}

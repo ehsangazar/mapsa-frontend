@@ -1,0 +1,18 @@
+.login-form {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    grid-template-rows: 100px 100px 60px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100px 100px 60px;
+    grid-gap: 10px;
+}
+form button {
+    background-color: var(--red);
+}
+
+/* CSS VARIABLES */

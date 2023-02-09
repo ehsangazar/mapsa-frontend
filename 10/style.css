@@ -1,24 +1,17 @@
-.login-form {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 100%;
-    grid-template-rows: 100px 100px 60px;
+/* Theme */
+:root {
+    --mobile-size: 600px;
+    --gray: #ccc;
+    --red: rgb(151, 1, 1);
+    --column-count: 5;
 }
-form {
-    display: grid;
-    grid-template-columns: 100px 100px 60px;
-    grid-gap: 10px;
-}
-
-
 /* 100vh -> height browser */
 /* 100vw -> width browser */
 /* 100% -> Height/Width of Parent  */
 
 ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(var(--column-count), 1fr);
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     list-style: none;
@@ -31,10 +24,10 @@ ul {
     grid-gap: 20px;
 }
 .page aside {
-    background-color: #ccc;
+    background-color: var(--red);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: var(--mobile-size)) {
     ul {
         grid-template-columns: repeat(2, 1fr);
     }

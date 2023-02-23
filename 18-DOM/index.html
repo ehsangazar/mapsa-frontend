@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>DOM</h2>
+
+    <div>
+        <button onclick="handlePlus()">
+            +
+        </button>
+        <span id="number">
+            0
+        </span>
+        <button onclick="handlePlus()">
+            -
+        </button>
+    </div>
+
+    <br />
+    <input id="search" type="text" onchange="handleChange()" />
+    <button onclick="handleInput()">Submit</button>
+    <input type="button" value="SEARCH">
+    <br />
+    <span id="message" class="message" style="color:red;">INFO</span>
+    
+
+
+    <br />
+    <br />
+    <br />
+    <!-- <input type="text" onkeypress="handleSearch(event)" /> -->
+    <input type="text" oninput="handleSearch(event)" />
+    <br />
+    <span class="message">INFO</span>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>REAL WORLD JAVASCRIPT</h2>
+    <span>LOADING</span>
+    <br />
+    <input id="realworld-input" type="text" placeholder="EMAIL" />
+    <button id="realworld-button">Submit</button>
+    <br />
+    <span id="realworld-alert" class="alert">INFO</span>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script type="text/javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,8 @@
+#app-async {
+    margin-top: 40px;
+    background-color: rgb(128, 254, 121);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}

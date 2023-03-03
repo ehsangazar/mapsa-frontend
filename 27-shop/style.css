@@ -1,0 +1,96 @@
+header {
+    padding: 10px 20px;  
+    position: sticky;
+    top: 0;  
+    background-color: rgb(255, 68, 68);
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+button, a.addToCart {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e6500;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1e0065;
+    color: white;
+}
+section {
+    padding: 10px;
+}
+h2 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.products, .productsInCart {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.products li, .productsInCart li {
+    margin: 10px;
+}
+.products .product, .productsInCart .product {
+    max-width: 200px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+.products .product h3, .productsInCart .product h3 {
+    height: 80px;
+}
+.products .product p, .productsInCart .product p {
+    height: 30px;
+}
+.products .product img, .productsInCart .product img {
+    width: 100%;
+    height: 200px;
+    width: 180px;
+}
+.cartParent {
+    display: flex;
+}
+.cartParent #cart {
+    padding-right: 5px;
+}
+button.cart--added {
+    background-color: #b9000d;
+    color: white;
+    cursor: not-allowed;
+}
+.singleProduct {
+    width: 100%;
+}
+.singleProduct img {
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+}
+.singleProduct button {
+    margin-top: 30px;
+}
+#checkout {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+}
+.user-cart {
+    display: flex;
+}
+.user-cart .userParent {
+    padding-right: 20px;
+}

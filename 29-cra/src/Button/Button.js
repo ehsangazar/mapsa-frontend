@@ -2,12 +2,14 @@ import "./Button.css";
 
 // Destructuring the props object
 const Button = ({ buttonType, children }) => {
-  const handleClick = () => {};
+  const handleClick = () => {
+    console.log("test");
+  };
 
   if (buttonType === "error") {
     return (
       <div>
-        <button onClick={handleClick} className="button button-error">
+        <button onClick={handleClick} className="btn btn-error">
           {children}
         </button>
       </div>
@@ -17,7 +19,7 @@ const Button = ({ buttonType, children }) => {
   if (buttonType === "primary") {
     return (
       <div>
-        <button onClick={handleClick} className="button button-primary">
+        <button onClick={handleClick} className="btn btn-primary">
           {children}
         </button>
       </div>
@@ -26,7 +28,7 @@ const Button = ({ buttonType, children }) => {
 
   return (
     <div>
-      <button onClick={handleClick} className="button">
+      <button onClick={handleClick} className="btn btn-secondary">
         {children}
       </button>
     </div>

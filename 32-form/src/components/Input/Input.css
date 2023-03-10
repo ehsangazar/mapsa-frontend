@@ -1,0 +1,24 @@
+.Input {
+    padding: 10px;
+
+}
+.Input label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Input input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.error {
+    width: 100%;
+    padding: 5px 0;
+    color: red;
+}

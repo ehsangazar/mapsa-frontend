@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+
+:root {
+  --ff-main: "Poppins", sans-serif;
+
+  --color-primary-dark: #0068c3;
+  --color-primary: #0074d9;
+  --color-primary-light: #1a82dd;
+  --color-primary-disabled: #71abdd;
+}
+
+.container {
+  min-height: 100vh;
+  font-family: var(--ff-main);
+}
+
+.background {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.inner-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding-block-start: 1rem;
+}
+
+.my-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  word-spacing: 5px;
+  margin-block-start: 1rem;
+}
+
+.my-position {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 10px;
+}
+
+.main-nav ul {
+  gap: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-nav .active {
+  color: var(--color-primary);
+}
+
+/* .main-nav li {
+  transition: all 200ms;
+} */
+
+.main-nav li:hover {
+  color: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.showcase {
+  margin-block-start: 4rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+
+.showcase__info span {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.light .showcase__info .my-explanation {
+  margin-block: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 35ch;
+}
+.dark .showcase__info .my-explanation {
+  margin-block: 1rem;
+  color: white;
+  max-width: 35ch;
+}
+
+
+
+.btn-primary {
+  background-color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  transition: all 300ms;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-primary:disabled{
+  background-color: var(--color-primary-disabled);
+  cursor: default;
+}
+
+.contact-box {
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-block-start: 4rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.contact-box__info {
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
+
+.contact-box__info h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.contact-box__info ul {
+  margin-top: 1rem;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.contact-box__form {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+}
+
+.contact-box__form h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.contact-box__form form {
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+.contact-box__form button {
+  align-self: flex-end;
+}
+
+.stack-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  height: 30px;
+  padding: 10px;
+}
+
+.stack-input::placeholder,
+.message-box__subject input::placeholder {
+  font-family: var(--ff-main);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.stack-input:hover,
+.stack-input:focus {
+  border-bottom-color: var(--color-primary-dark);
+}
+
+.message-box {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message-box__subject {
+  border-bottom: #ccc solid 1px;
+  height: 25px;
+  padding-block-end: 5px;
+  margin-block-end: 10px;
+}
+
+.message-box__subject input {
+  font-weight: 600;
+  width: 100%;
+}
+
+.message-box__message textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: var(--ff-main);
+  background: none;
+}
+
+.error-message{
+  font-size: 12px;
+  color: red;
+}
+
+.error-style::placeholder{
+  color: red;
+}
+
+input:focus {
+  background-color:red;
+}

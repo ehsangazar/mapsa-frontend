@@ -1,18 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src={"https://persiajs.dev/_next/image?url=%2Flogo.png&w=128&q=75"}
+          className="App-logo"
+          alt="logo"
+        />
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://persiajs.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with Ehsan Gazar
+          Learn with Gazar 2
         </a>
       </header>
     </div>

@@ -1,8 +1,10 @@
+import Layout from "../containers/Layout/Layout"
+
 const About = () => {
     return (
-        <div>
+        <Layout>
             <h1>About</h1>
-        </div>
+        </Layout>
     )
 }
 

@@ -1,0 +1,9 @@
+.Header {
+    width: 100%;
+}
+.Header ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,50px);
+    grid-gap: 10px;
+    list-style: none;
+}

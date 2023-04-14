@@ -1,8 +1,27 @@
 import Head from 'next/head'
-import ImageList from './containers/ImagesList/ImagesList'
-import { useEffect, useState } from 'react';
+import ImageList from '../containers/ImagesList/ImagesList'
+import { PostType } from '@/types/posts'
+import { useState } from 'react'
+import PostContext from '@/contexts/PostContext'
 
-const Home = ({ data=[], title }) => {
+interface HomeType {
+  data: PostType[],
+  title: string
+}
+
+const Home = ({ data=[], title } : HomeType) => {
+  const [pinnedItems, setPinnedItems] = useState<PostType[]>([]);
+
+  const togglePin = (item: PostType) => {
+    const pinned = !!pinnedItems.find((pinnedItem) => pinnedItem.id === item.id)
+    if (pinned) {
+      const newPinnedItems = pinnedItems.filter((pinnedItem) => pinnedItem.id !== item.id)
+      setPinnedItems(newPinnedItems)
+    } else {
+      setPinnedItems([...pinnedItems, item]);
+    }
+  }
+
   return (
     <>
       <Head>
@@ -14,7 +33,9 @@ const Home = ({ data=[], title }) => {
       <div>
         {title}
         {data.length === 0 && <p>Loading...</p>}
-        <ImageList data={data} />
+        <PostContext.Provider value={{ data, togglePin, pinnedItems }}>
+          <ImageList />
+        </PostContext.Provider>
       </div>
     </>
   )

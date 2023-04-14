@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
             --white: ${theme.colors.white};
             --primary-color: ${theme.colors.primary};
             --secondary-color: ${theme.colors.secondary};
+            --red-color: ${theme.colors.red};
         }
 
         body {

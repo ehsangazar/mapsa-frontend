@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
+import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
 
   const startQuiz = () => {
-    router.push('/quiz/1')
-  }
+    router.push("/quiz/1");
+  };
 
-  console.log('start quiz')
   return (
     <>
       <Head>
@@ -18,10 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <button onClick={startQuiz}>
-          Start Quiz
-        </button>
+        <button onClick={startQuiz}>Start Quiz</button>
+
+        <br />
+        <Link href="/up">Up</Link>
       </main>
     </>
-  )
+  );
 }

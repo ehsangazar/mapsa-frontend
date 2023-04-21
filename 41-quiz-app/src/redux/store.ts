@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from './counterSlice'
 import quizSlice from './quizSlice'
+import upSlice from './upSlice'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    quiz: quizSlice
+    quiz: quizSlice,
+    up: upSlice
   },
 })
 
